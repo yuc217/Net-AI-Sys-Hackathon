@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the CSV file
 df = pd.read_csv('system_monitor.csv')
 
 # Convert 'Time' column to datetime if it's not already in that format
@@ -37,8 +36,5 @@ plt.title('WiFi Signal Strength Over Time')
 plt.xticks(rotation=45)
 plt.legend()
 
-# Adjust layout
 plt.tight_layout()
-
-# Show the plot
 plt.show()
